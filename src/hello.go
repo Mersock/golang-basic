@@ -24,22 +24,29 @@ func main() {
 	/*
 		number and string
 	*/
-	number1 := 5
-	number2 := 4
-	p1 := "knz"
-	p2 := "phumthawan"
+	// number1 := 5
+	// number2 := 4
+	// p1 := "knz"
+	// p2 := "phumthawan"
 	//operation
-	fmt.Println(number1 + number2)
-	fmt.Println(number1 - number2)
-	fmt.Println(number1 * number2)
-	fmt.Println(number1 / number2)
+	// fmt.Println(number1 + number2)
+	// fmt.Println(number1 - number2)
+	// fmt.Println(number1 * number2)
+	// fmt.Println(number1 / number2)
 
 	//concat string
-	p3 := p1 + p2
-	fmt.Println(p3)
+	// p3 := p1 + p2
+	// fmt.Println(p3)
 	//ascii format
-	fmt.Println(p3[1])
+	// fmt.Println(p3[1])
 
-	fmt.Println(p3[0:])
-	fmt.Println(p3[1:3])
+	// fmt.Println(p3[0:])
+	// fmt.Println(p3[1:3])
+
+	isEmpty := true
+	isJumping := false
+	fmt.Println(isEmpty)
+	fmt.Println(isJumping)
+	compareNum := 5 >= 3
+	fmt.Println(compareNum)
 }
