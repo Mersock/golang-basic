@@ -2,12 +2,15 @@ package main
 
 import "fmt"
 
+//global var
+var gVariable int = 5000
+
 func main() {
 	/*
 		Initial
 	*/
-	//fmt.Println("xxxx");
-	//fmt.Print("hello, world\n");
+	//fmt.Println("xxxx")
+	//fmt.Print("hello, world\n")
 
 	/*
 		Variable
@@ -16,10 +19,10 @@ func main() {
 	//age2 := 5000000.22332
 	//text := "This is new text"
 	//num1, num2 := 323, 22
-	//fmt.Println("Variable integer is", age2);
-	//fmt.Println("Text common now is", text);
-	//fmt.Println("Text number one", num1);
-	//fmt.Println("Text number two", num2);
+	//fmt.Println("Variable integer is", age2)
+	//fmt.Println("Text common now is", text)
+	//fmt.Println("Text number one", num1)
+	//fmt.Println("Text number two", num2
 
 	/*
 		number and string
@@ -43,10 +46,21 @@ func main() {
 	// fmt.Println(p3[0:])
 	// fmt.Println(p3[1:3])
 
-	isEmpty := true
-	isJumping := false
-	fmt.Println(isEmpty)
-	fmt.Println(isJumping)
-	compareNum := 5 >= 3
-	fmt.Println(compareNum)
+	// isEmpty := true
+	// isJumping := false
+	// fmt.Println(isEmpty)
+	// fmt.Println(isJumping)
+	// compareNum := 5 >= 3
+	// fmt.Println(compareNum)
+
+	//print global var
+	fmt.Println(gVariable)
+	IVariable := 40
+	fmt.Println(IVariable)
+	anotherFunc()
+}
+
+func anotherFunc() {
+	fmt.Println(IVariable)
+	fmt.Println(gVariable)
 }
