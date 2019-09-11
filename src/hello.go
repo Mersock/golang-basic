@@ -54,13 +54,79 @@ func main() {
 	// fmt.Println(compareNum)
 
 	//print global var
-	fmt.Println(gVariable)
-	IVariable := 40
-	fmt.Println(IVariable)
+	// fmt.Println(gVariable)
+	// IVariable := 40
+	// fmt.Println(IVariable)
+	// anotherFunc()
+
+	// input
+	// fmt.Print("Input Number: ")
+	// var input float64
+	// fmt.Scanf("%f", &input)
+
+	// condition := input > 2
+	// if condition {
+	// 	fmt.Println("Worked!!!")
+	// } else {
+	// 	fmt.Println("not Worked!!!")
+	// }
+
+	// if 6 < 3 || 8 < 5 {
+	// 	fmt.Println("Worked!!!")
+	// } else {
+	// 	fmt.Println("Not Worked!!!")
+	// }
+
+	// switch input {
+	// case 0:
+	// 	fmt.Println("Zero")
+	// case 1:
+	// 	fmt.Println("One")
+	// case 2:
+	// 	fmt.Println("Two")
+
+	// default:
+	// 	fmt.Println("Unknown")
+	// }
+
+	// for i := 1; i <= 10; i++ {
+	// 	fmt.Println("kkkk")
+	// }
+	// n := 1
+	// for n <= 200 {
+	// 	fmt.Println("xxxx")
+	// 	n++
+	// }
+
+	// for a := 1; a <= 100; a++ {
+	// 	if a%2 == 0 {
+	// 		fmt.Println(a, "--")
+	// 	} else {
+	// 		fmt.Println(a, "-")
+	// 	}
+	// }
+
+	dosomething("kbank")
+	addition(1, 2)
 	anotherFunc()
+	fmt.Println(addition2(5, 2))
 }
 
 func anotherFunc() {
+	IVariable := 20
 	fmt.Println(IVariable)
 	fmt.Println(gVariable)
+}
+
+func dosomething(str string) {
+	fmt.Println(str)
+}
+
+func addition(a int, b int) {
+	fmt.Println(a + b)
+}
+
+func addition2(a int, b int) int {
+	output := a + b
+	return output
 }
