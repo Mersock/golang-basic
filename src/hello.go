@@ -117,24 +117,38 @@ func main() {
 	//rescursive func
 	// fmt.Println(factorial(5))
 
-	var x [5]int
-	x[0] = 10
-	x[1] = 20
-	x[2] = 30
-	x[3] = 40
-	x[4] = 50
-	fmt.Println(x)
+	//array
+	// var x [5]int
+	// x[0] = 10
+	// x[1] = 20
+	// x[2] = 30
+	// x[3] = 40
+	// x[4] = 50
+	// fmt.Println(x)
 
-	y := [3]float32{1, 2, 3}
-	fmt.Println(y)
+	// y := [3]float32{1, 2, 3}
+	// fmt.Println(y)
 
-	fmt.Println(len(x))
+	// fmt.Println(len(x))
 
-	var total float32
-	for _, value := range y {
-		total += value
+	// var total float32
+	// for _, value := range y {
+	// 	total += value
+	// }
+	// fmt.Println(total / float32(len(x)))
+
+	//slice
+	// x := make([]int, 20)
+	// y := []int{1, 2, 3}
+	// z := append(y, 4, 5)
+	// xx := []int{1, 2, 3, 5}
+	// copy(y, x)
+
+	x := map[int]string{
+		1: "hello",
+		2: "hi",
 	}
-	fmt.Println(total / float32(len(x)))
+	fmt.Println(x[1])
 
 }
 
