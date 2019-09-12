@@ -106,11 +106,15 @@ func main() {
 	// 	}
 	// }
 
-	dosomething("kbank")
-	addition(1, 2)
-	anotherFunc()
-	fmt.Println(addition2(5, 2))
+	// dosomething("kbank")
+	// addition(1, 2)
+	// anotherFunc()
+	// fmt.Println(addition2(5, 2))
+
+	summation(1, 2, 3)
 }
+
+//func basic
 
 func anotherFunc() {
 	IVariable := 20
@@ -126,7 +130,26 @@ func addition(a int, b int) {
 	fmt.Println(a + b)
 }
 
+func summation(arr ...int) {
+
+	var total int
+	//no base varable
+	for _, n := range arr {
+		total += n
+	}
+	fmt.Println(total)
+}
+
 func addition2(a int, b int) int {
 	output := a + b
 	return output
+}
+
+//Variadic function
+func summation1(a int, b int) {
+	fmt.Println(a + b)
+}
+
+func summation2(a int, b int, c int) {
+	fmt.Println(a + b + c)
 }
