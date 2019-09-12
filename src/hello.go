@@ -111,7 +111,31 @@ func main() {
 	// anotherFunc()
 	// fmt.Println(addition2(5, 2))
 
-	summation(1, 2, 3)
+	//variadic func
+	// summation(1, 2, 3)
+
+	//rescursive func
+	// fmt.Println(factorial(5))
+
+	var x [5]int
+	x[0] = 10
+	x[1] = 20
+	x[2] = 30
+	x[3] = 40
+	x[4] = 50
+	fmt.Println(x)
+
+	y := [3]float32{1, 2, 3}
+	fmt.Println(y)
+
+	fmt.Println(len(x))
+
+	var total float32
+	for _, value := range y {
+		total += value
+	}
+	fmt.Println(total / float32(len(x)))
+
 }
 
 //func basic
@@ -152,4 +176,11 @@ func summation1(a int, b int) {
 
 func summation2(a int, b int, c int) {
 	fmt.Println(a + b + c)
+}
+
+func factorial(num int) int {
+	if num == 1 {
+		return 1
+	}
+	return num * factorial(num-1)
 }
