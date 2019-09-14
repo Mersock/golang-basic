@@ -144,12 +144,28 @@ func main() {
 	// xx := []int{1, 2, 3, 5}
 	// copy(y, x)
 
-	x := map[int]string{
-		1: "hello",
-		2: "hi",
-	}
-	fmt.Println(x[1])
+	//map
+	// x := map[int]string{
+	// 	1: "hello",
+	// 	2: "hi",
+	// }
+	// fmt.Println(x[1])
 
+	//closure
+	// x := func(x int, y int) int {
+	// 	return x + y
+	// }
+	// fmt.Println(x(1, 2))
+
+	//pointer
+	x := 10
+	fmt.Printf("value is %d\n", x)
+	fmt.Printf("Address x variable %x\n", &x)
+	var p *int
+	p = &x
+	fmt.Printf("pointer p = %x\n", p)
+	*p = 20
+	fmt.Printf("value is %d\n", x)
 }
 
 //func basic
