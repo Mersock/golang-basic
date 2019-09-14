@@ -5,6 +5,14 @@ import "fmt"
 //global var
 var gVariable int = 5000
 
+//struct
+type Books struct {
+	title    string
+	author   string
+	subtitle string
+	price    float64
+}
+
 func main() {
 	/*
 		Initial
@@ -158,14 +166,25 @@ func main() {
 	// fmt.Println(x(1, 2))
 
 	//pointer
-	x := 10
-	fmt.Printf("value is %d\n", x)
-	fmt.Printf("Address x variable %x\n", &x)
-	var p *int
-	p = &x
-	fmt.Printf("pointer p = %x\n", p)
-	*p = 20
-	fmt.Printf("value is %d\n", x)
+	// x := 10
+	// fmt.Printf("value is %d\n", x)
+	// fmt.Printf("Address x variable %x\n", &x)
+	// var p *int
+	// p = &x
+	// fmt.Printf("pointer p = %x\n", p)
+	// *p = 20
+	// fmt.Printf("value is %d\n", x)
+
+	//struct
+	var Book1 Books
+	Book1.title = "Hello Go"
+	Book1.author = "Knz"
+	Book1.subtitle = "phumthawan"
+	Book1.price = 222.2
+	fmt.Println(Book1)
+
+	Book2 := Books{title: "Hi", author: "Hello", price: 123.33}
+	fmt.Println(Book2.price * 2)
 }
 
 //func basic
