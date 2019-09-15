@@ -183,11 +183,12 @@ func main() {
 	// Book1.price = 222.2
 	// fmt.Println(Book1)
 
+	//Routine
 	// Book2 := Books{title: "Hi", author: "Hello", price: 123.33}
 	// fmt.Println(Book2.price * 2)
-	go f(0)
-	var input string
-	fmt.Scanln(&input)
+	// go f(0)
+	// var input string
+	// fmt.Scanln(&input)
 }
 
 //routine
