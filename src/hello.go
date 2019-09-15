@@ -176,15 +176,25 @@ func main() {
 	// fmt.Printf("value is %d\n", x)
 
 	//struct
-	var Book1 Books
-	Book1.title = "Hello Go"
-	Book1.author = "Knz"
-	Book1.subtitle = "phumthawan"
-	Book1.price = 222.2
-	fmt.Println(Book1)
+	// var Book1 Books
+	// Book1.title = "Hello Go"
+	// Book1.author = "Knz"
+	// Book1.subtitle = "phumthawan"
+	// Book1.price = 222.2
+	// fmt.Println(Book1)
 
-	Book2 := Books{title: "Hi", author: "Hello", price: 123.33}
-	fmt.Println(Book2.price * 2)
+	// Book2 := Books{title: "Hi", author: "Hello", price: 123.33}
+	// fmt.Println(Book2.price * 2)
+	go f(0)
+	var input string
+	fmt.Scanln(&input)
+}
+
+//routine
+func f(n int) {
+	for i := 0; i < 10; i++ {
+		fmt.Println(n, ":", i)
+	}
 }
 
 //func basic
